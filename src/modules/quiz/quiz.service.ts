@@ -18,6 +18,9 @@ export class QuizService {
     return await this.quizRepository.save(quiz);
   }
  
+  async getQuizById(id: number){
+    return await this.quizRepository.findOne({where: {id}, relations: ['questions']})
+  }
 }
 
 
