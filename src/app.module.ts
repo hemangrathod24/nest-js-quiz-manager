@@ -12,4 +12,3 @@ import { QuizModule } from './modules/quiz/quiz.module';
   providers: [AppService],
 })
 export class AppModule {}
-` `
