@@ -1,5 +1,5 @@
 import { ColdObservable } from "rxjs/internal/testing/ColdObservable";
-import { Question } from "src/modules/question/entities/question.entity";
+import { Question } from "./question.entity"; 
 import { text } from "stream/consumers";
 import { BaseEntity, Column, Entity, PrimaryGeneratedColumn ,OneToMany} from "typeorm";
 
@@ -28,7 +28,8 @@ export class Quiz extends BaseEntity{
     })
     isActive: boolean;
 
-    @OneToMany(()=> Question,(question)=> question)
-    questions: Question[]
+    @OneToMany(()=> Question,(question)=> question.quiz)
+    questions: Question[];
 
 }
+  
