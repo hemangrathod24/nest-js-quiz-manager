@@ -7,7 +7,6 @@ export class CreateOptionDto {
     @Length(3,255)
     text: string;
     
-    
     @IsNotEmpty()
     qestionId: number;
 
