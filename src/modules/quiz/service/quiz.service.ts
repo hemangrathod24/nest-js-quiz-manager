@@ -21,6 +21,7 @@ export class QuizService {
   async getQuizById(id: number){
     return await this.quizRepository.findOne({where: {id}, relations: ['questions']})
   }
+  
 }
 
 

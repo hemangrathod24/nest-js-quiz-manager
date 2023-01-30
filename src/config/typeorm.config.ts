@@ -6,7 +6,7 @@ export const typeOrmConfig: TypeOrmModuleOptions = {
     port: 5432,
     username: 'postgres',
     password: 'Admin@123',
-    database: 'Quiz',
+    database: 'Quiz-Manager',
     entities: ["dist/**/*.entity.js"],
     synchronize: true,
   }

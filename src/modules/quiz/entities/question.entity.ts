@@ -17,6 +17,6 @@ export class Question extends BaseEntity{
     @ManyToOne(()=> Quiz, (quiz)=> quiz.questions)
     quiz: Quiz
     
-    // @OneToMany(()=> Option,(option)=> option.question)
-    // options: Option[];
+    @OneToMany(()=> Option,(option)=> option.question)
+    options: Option[];
 }

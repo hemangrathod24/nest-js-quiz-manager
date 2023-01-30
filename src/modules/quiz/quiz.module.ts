@@ -16,3 +16,8 @@ import { Option } from './entities/option.entity';
   providers: [QuizService, QuestionService,OptionService]
 })
 export class QuizModule {}
+
+
+
+
+

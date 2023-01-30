@@ -21,6 +21,7 @@ export class QuestionService {
     
     await quiz.save();
     return newQuestion;
+    
 }
 
    
